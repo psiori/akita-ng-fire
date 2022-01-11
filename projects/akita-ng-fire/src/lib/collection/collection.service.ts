@@ -6,7 +6,7 @@ import {
   QueryFn,
   QueryGroupFn,
   Query,
-} from '@angular/fire/firestore';
+} from '@angular/fire/compat/firestore';
 import {
   EntityStore,
   withTransaction,
@@ -14,7 +14,7 @@ import {
   ActiveState,
   getEntityType,
 } from '@datorama/akita';
-import firebase from 'firebase/app';
+import firebase from 'firebase/compat/app';
 import { getIdAndPath } from '../utils/id-or-path';
 import {
   syncStoreFromDocAction,
